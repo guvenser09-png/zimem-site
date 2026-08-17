@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gizlilik Politikası — Zimem</title>
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="index,follow">
+<style>
+:root{
+  --paper:#FBF8F3; --ink:#1F1D1A; --muted:#6B655C; --rule:#E4DDD1;
+  --accent:#2F6B5E; --card:#FFFFFF; --code:#F2EDE4;
+}
+:root:not([data-theme="light"]){@media (prefers-color-scheme:dark){
+  :root{--paper:#15140F; --ink:#EDE8DF; --muted:#A39C90; --rule:#2E2B24;
+        --accent:#8FC5B6; --card:#1D1B16; --code:#221F19;}
+}}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--paper:#15140F; --ink:#EDE8DF; --muted:#A39C90;
+    --rule:#2E2B24; --accent:#8FC5B6; --card:#1D1B16; --code:#221F19;}
+}
+:root[data-theme="dark"]{--paper:#15140F; --ink:#EDE8DF; --muted:#A39C90;
+  --rule:#2E2B24; --accent:#8FC5B6; --card:#1D1B16; --code:#221F19;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-text-size-adjust:100%}
+.wrap{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 5rem}
+header{border-bottom:1px solid var(--rule);padding-bottom:1.25rem;margin-bottom:2rem}
+.brand{font-weight:650;letter-spacing:-.01em;font-size:1.05rem;color:var(--ink);text-decoration:none}
+.brand span{color:var(--accent)}
+nav{margin-top:.6rem;font-size:.9rem}
+nav a{color:var(--muted);text-decoration:none;margin-right:1rem;white-space:nowrap}
+nav a:hover,nav a[aria-current]{color:var(--accent)}
+h1{font-size:1.85rem;line-height:1.25;letter-spacing:-.02em;margin:0 0 1rem}
+h2{font-size:1.25rem;margin:2.25rem 0 .6rem;letter-spacing:-.01em}
+h3{font-size:1.05rem;margin:1.75rem 0 .5rem}
+p,li{margin:.7rem 0}
+ul,ol{padding-left:1.35rem}
+a{color:var(--accent)}
+hr{border:0;border-top:1px solid var(--rule);margin:2.25rem 0}
+blockquote{margin:1.25rem 0;padding:.9rem 1.1rem;background:var(--card);
+  border-left:3px solid var(--accent);border-radius:0 8px 8px 0}
+blockquote p{margin:.3rem 0}
+code{background:var(--code);padding:.12em .38em;border-radius:5px;
+  font:.88em/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;word-break:break-word}
+.tablewrap{overflow-x:auto;margin:1.25rem 0}
+table{border-collapse:collapse;width:100%;font-size:.94rem}
+th,td{text-align:left;padding:.55rem .7rem;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-weight:620;color:var(--muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.03em}
+strong{font-weight:640}
+footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--rule);
+  color:var(--muted);font-size:.88rem}
+.lede{font-size:1.06rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="brand" href="index.html">Zimem<span>.</span></a>
+<nav><a href="gizlilik.html" aria-current="page">Gizlilik</a><a href="kvkk.html">KVKK</a><a href="kullanim-sartlari.html">Kullanım Şartları</a><a href="privacy.html">Privacy (EN)</a><a href="terms.html">Terms (EN)</a></nav>
+</header>
+<main>
+<p>(Türkçe)</p>
+<p><strong>Zimem Gizlilik Politikası</strong> Sürüm <code>[[SÜRÜM]]</code> — Yürürlük tarihi: <code>[[YÜRÜRLÜK]]</code></p>
+<h2>1.1 Tek cümlelik özet</h2>
+<p>Zimem hiçbir kişisel verinizi toplamaz, sunucusuna göndermez, saklamaz veya üçüncü kişilere aktarmaz; girdiğiniz her şey yalnızca kendi cihazınızda kalır.</p>
+<h2>1.2 Bu politikanın kapsamı</h2>
+<p>Bu politika, <code>[[VERİ_SORUMLUSU]]</code> tarafından geliştirilen <strong>Zimem</strong> adlı iOS uygulaması ve <code>zimem.app</code> alan adı altındaki bilgilendirme sayfaları için geçerlidir.</p>
+<h2>1.3 Zimem'in mimarisi: neden veri toplanmıyor</h2>
+<p>Zimem'in bir arka uç sunucusu yoktur. Uygulama, kurulum sonrasında hesaplama yapmak için internete hiç bağlanmaz. Bunun sonucu olarak:</p>
+<ul>
+<li><strong>Hesap yok.</strong> Kayıt, giriş, e-posta, telefon numarası, kullanıcı adı veya şifre istenmez. Sosyal medya hesabıyla giriş yoktur.</li>
+<li><strong>Sunucu yok.</strong> Verilerinizi alacak, saklayacak veya işleyecek bir sunucumuz bulunmamaktadır. Bu bir gizlilik tercihi değil, ürünün mimari kısıtıdır.</li>
+<li><strong>Analitik yok.</strong> Firebase, Google Analytics, Amplitude, Mixpanel, Sentry, Crashlytics veya benzeri hiçbir ölçümleme/çökme raporlama aracı uygulamaya dahil edilmemiştir.</li>
+<li><strong>Reklam yok.</strong> Reklam ağı, reklam kimliği (IDFA), yeniden hedefleme pikseli veya izleme (tracking) teknolojisi kullanılmaz. <code>AppTrackingTransparency</code> çerçevesi uygulamaya hiç eklenmemiştir; bu nedenle size izleme izni soran bir ekran da hiçbir zaman görmezsiniz.</li>
+<li><strong>Üçüncü taraf SDK yok.</strong> Uygulamadaki tek harici bileşen, namaz vakitlerini <strong>cihazınızın içinde</strong> hesaplayan <code>Adhan</code> adlı açık kaynaklı (MIT lisanslı) matematik kütüphanesidir. Bu kütüphane ağ bağlantısı kurmaz, veri göndermez ve geliştiricisiyle hiçbir iletişimi yoktur.</li>
+<li><strong>Konum izni yok.</strong> Zimem konum izni <strong>istemez</strong>. Uygulamanın kodunda konum servislerine erişim tanımı (<code>NSLocationWhenInUseUsageDescription</code>) bulunmaz; sistem size konum izni sormaz. Namaz vakti hesabı için şehri listeden kendiniz seçersiniz.</li>
+</ul>
+<h2>1.4 Uygulamaya girdiğiniz bilgiler</h2>
+<p>Zimem'in size doğru bir sonuç üretebilmesi için beyan ettiğiniz bilgiler şunlardır:</p>
+<div class="tablewrap"><table><thead><tr>
+<th>Bilgi</th>
+<th>Neden isteniyor</th>
+<th>Nerede kalıyor</th>
+</tr></thead><tbody>
+<tr><td>Doğum tarihi veya yaş aralığı</td><td>Yükümlülüğün başlangıcını (buluğ) hesaplamak</td><td>Cihazınızda</td></tr>
+<tr><td>Cinsiyet</td><td>Hayız ve nifas düşümlerinin uygulanıp uygulanmayacağını belirlemek</td><td>Cihazınızda</td></tr>
+<tr><td>Buluğ tarihi (biliniyorsa)</td><td>Belirsizlik bandını daraltmak</td><td>Cihazınızda</td></tr>
+<tr><td>Mezhep tercihi (Hanefî / Şâfiî)</td><td>Vitir ve nifas azami süresi kurallarını seçmek</td><td>Cihazınızda</td></tr>
+<tr><td>İbadete başlama / ara verme dönemleri</td><td>Borçlu gün aralıklarını belirlemek</td><td>Cihazınızda</td></tr>
+<tr><td>Ortalama âdet süresi, doğum ve loğusalık tarihleri</td><td>Namaz borcundan düşüm yapmak</td><td>Cihazınızda</td></tr>
+<tr><td>Yolculuk ve uzun süreli hastalık/baygınlık dönemleri</td><td>Rekât hesabını ve düşümleri uygulamak</td><td>Cihazınızda</td></tr>
+<tr><td>Seçtiğiniz şehir</td><td>Namaz vakitlerini cihaz içinde hesaplamak</td><td>Cihazınızda</td></tr>
+<tr><td>Günlük kaza kayıtlarınız</td><td>Kalan borcu güncellemek</td><td>Cihazınızda</td></tr>
+</tbody></table></div>
+<p><strong>Bu bilgilerin tamamı cihazınızın uygulamaya ayrılmış korumalı alanında (app container) tutulur.</strong> Hiçbiri bize, bir sunucuya, bir analiz aracına veya herhangi bir üçüncü kişiye iletilmez. Bu verilere erişimimiz teknik olarak mümkün değildir.</p>
+<h2>1.5 Özel nitelikli kişisel veriler hakkında açık beyan</h2>
+<p>Yukarıdaki bilgilerin bir kısmı, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun 6. maddesi ve GDPR'ın 9. maddesi anlamında <strong>özel nitelikli (hassas) kişisel veri</strong> kategorisine girer:</p>
+<ul>
+<li><strong>Dinî inanç ve mezhep tercihi.</strong> Zimem'i kullanıyor olmanız zaten bir dinî pratiğe işaret eder ve seçtiğiniz mezhep dinî inanca ilişkin veridir.</li>
+<li><strong>Sağlığa ilişkin veriler.</strong> Âdet süresi, doğum tarihleri, loğusalık ve hastalık dönemleri sağlık verisidir.</li>
+</ul>
+<p>Bu verilerin hassasiyetinin farkındayız ve bu nedenle ürünü baştan bunları <strong>hiç toplamayacak</strong> şekilde tasarladık. Bu kategorideki hiçbir veri tarafımızdan toplanmamakta, işlenmemekte, saklanmamakta, üçüncü kişilere aktarılmamakta ve yurt dışına çıkarılmamaktadır. Cihazınızdan çıkmadıkları için bu veriler bakımından veri sorumlusu sıfatımız doğmamaktadır.</p>
+<p>Ayrıca:</p>
+<ul>
+<li><strong>Zimem'in Apple Sağlık (HealthKit) ile hiçbir bağlantısı yoktur.</strong> Sağlık verilerinizi okumaz, oraya veri yazmaz, izin istemez.</li>
+<li><strong>Zimem bir döngü takip veya sağlık uygulaması değildir.</strong> Girdiğiniz âdet süresi yalnızca geçmişe dönük bir aritmetik düşüm için kullanılan bir sayıdır. Uygulama gelecekteki âdet tarihlerini tahmin etmez, gebelik tahmini yapmaz, doğurganlık penceresi göstermez, tıbbi yorum üretmez.</li>
+</ul>
+<h2>1.6 Cihaz içi saklama ve iCloud</h2>
+<p><strong>Yerel saklama.</strong> Verileriniz cihazınızda, iOS'un uygulama başına yalıtımı ve cihaz şifrelemesi (Data Protection) altında tutulur. Cihaz yedeklemesi açıksa, bu veriler iOS'un normal yedekleme davranışının bir parçası olarak sizin yedeklemenize dahil olabilir; bu yedek sizin Apple hesabınıza aittir ve bizim erişimimize kapalıdır.</p>
+<p><strong>iCloud senkronizasyonu (yalnızca ilerideki bir sürümde etkinleşecektir).</strong> İleride cihazlarınız arasında senkronizasyon sunulursa, bu yalnızca <strong>CloudKit private database</strong> üzerinden, yani <strong>sizin kendi iCloud hesabınızın özel alanında</strong> gerçekleşecektir. Bu alan Apple tarafından işletilir, size aittir ve geliştirici olarak içeriğine erişimimiz yoktur; ne okuyabilir ne silebilir ne de görebiliriz. Bu özellik açıldığında bu politika güncellenecek ve uygulama içinde değişiklik bildirilecektir. <strong>Yayındaki mevcut sürümde hiçbir senkronizasyon yoktur; verileriniz cihazınızdan hiç çıkmaz.</strong></p>
+<h2>1.7 Bildirimler</h2>
+<p>Zimem'in istediği <strong>tek izin</strong> bildirim iznidir ve bu izin ancak siz borç sonucunuzu gördükten ve takibe başlamayı seçtikten sonra istenir.</p>
+<p>Bildirimler <strong>cihazınızda yerel olarak (local notification)</strong> zamanlanır. Uzaktan bildirim (push) altyapısı kullanılmaz; bu nedenle cihaz bildirim jetonunuz (device token) diye bir veri oluşmaz ve tarafımıza hiçbir bildirim sinyali ulaşmaz. Bildirimi ne zaman aldığınızı, açıp açmadığınızı veya üzerine dokunup dokunmadığınızı göremeyiz.</p>
+<p>Yalnızca ibadet vakitlerine bağlı hatırlatmalar gönderilir. Kampanya, duyuru, indirim veya "seni özledik" türü pazarlama bildirimi gönderilmez. Bildirimleri iOS Ayarlar üzerinden dilediğiniz an tamamen kapatabilirsiniz; uygulama bildirimsiz de tam işlevle çalışır.</p>
+<h2>1.8 Satın almalar</h2>
+<p>Zimem'de tek seferlik, aboneliksiz bir satın alma bulunur ve bu satın alma Apple'ın uygulama içi satın alma altyapısı (StoreKit) üzerinden gerçekleşir.</p>
+<ul>
+<li><strong>Ödeme bilgilerinizi görmeyiz.</strong> Kart numarası, fatura adresi, ad soyad veya Apple hesabı bilgileriniz uygulamaya hiç girilmez ve bize hiç ulaşmaz. Ödemeyi Apple alır ve işler; bu işlem Apple'ın kendi gizlilik politikasına tabidir.</li>
+<li><strong>Üçüncü taraf ödeme aracısı yoktur.</strong> Satın alma yönetimi için RevenueCat, Adapty, Superwall veya benzeri hiçbir hizmet kullanılmaz; doğrudan Apple'ın StoreKit arayüzü kullanılır.</li>
+<li>Apple, bize App Store Connect üzerinden <strong>toplulaştırılmış ve kimliksizleştirilmiş</strong> satış raporları sunar (örneğin "şu ülkede şu gün kaç adet satıldı"). Bu raporlar sizi tanımlamamıza imkân vermez.</li>
+</ul>
+<h2>1.9 Çökme ve performans verileri</h2>
+<p>Uygulamada çökme raporlama aracı bulunmaz. iOS cihazınızda <strong>"iPhone Analizini Paylaş"</strong> ayarı açıksa, Apple çökme ve performans verilerini kendi kurallarına göre toplayabilir ve bunların bir kısmını bize toplulaştırılmış biçimde sunar. Bu, Apple'ın işletim sistemi düzeyindeki bir işlemidir, bizim uygulamamıza yerleştirilmiş bir kod değildir ve bu ayarı iOS Ayarlar → Gizlilik ve Güvenlik → Analiz ve İyileştirmeler bölümünden kapatabilirsiniz.</p>
+<h2>1.10 Bize kendi isteğinizle yazdığınızda</h2>
+<p>Bize <code>[[EPOSTA]]</code> adresinden e-posta gönderirseniz, e-posta adresiniz ve yazdığınız içerik doğal olarak bize ulaşır. Bu yazışmayı yalnızca sorununuzu çözmek için kullanırız, pazarlama listesine eklemeyiz ve makul bir süre sonra sileriz. Destek talebinizde ekran görüntüsü paylaşmak zorunda değilsiniz; paylaşırsanız kişisel bilgilerinizi karartmanızı öneririz.</p>
+<h2>1.11 Bu politikada yer <strong>almayan</strong> ve bu üründe doğru <strong>olmayan</strong> ifadeler</h2>
+<p>Şablon gizlilik politikalarında sık geçen aşağıdaki cümleler Zimem için geçerli değildir ve bilerek yazılmamıştır. Bunları burada listeliyoruz ki ileride sessizce eklenip eklenmediğini denetleyebilesiniz:</p>
+<ul>
+<li>"Verilerinizi iş ortaklarımızla paylaşabiliriz." — Paylaşılacak veri yoktur, iş ortağı yoktur.</li>
+<li>"Hizmetlerimizi iyileştirmek için kullanım verilerinizi toplarız." — Kullanım verisi toplanmaz.</li>
+<li>"Kişiselleştirilmiş reklam gösterebiliriz." — Reklam gösterilmez.</li>
+<li>"Verileriniz yurt dışındaki sunucularımızda işlenebilir." — Sunucumuz yoktur.</li>
+<li>"Şirket birleşmesi hâlinde verileriniz devredilebilir." — Devredilecek veri yoktur.</li>
+<li>"Çerezler kullanıyoruz." — Uygulamada çerez kullanılmaz. (Web sitesi için bkz. 1.14)</li>
+</ul>
+<p>Bu ürünün mimarî taahhüdü, bu cümlelerden herhangi birinin ileride doğru hâle gelmesini engellemektir. Değişirse, değişiklik uygulama içinde açıkça duyurulur ve bu bölüm güncellenir (bkz. 1.15).</p>
+<h2>1.12 Haklarınız</h2>
+<p>KVKK m.11 ve GDPR m.15–22 uyarınca; verilerinize erişme, düzeltme, silme, işlemeye itiraz etme ve taşınabilirlik haklarınız vardır. Zimem'de bu hakların pratik karşılığı şudur:</p>
+<ul>
+<li><strong>Erişim ve taşınabilirlik:</strong> Verileriniz zaten yalnızca sizin cihazınızdadır ve tamamı uygulama içinden görüntülenebilir.</li>
+<li><strong>Düzeltme:</strong> Beyan ettiğiniz her varsayım (buluğ tarihi, âdet süresi, dönemler) uygulama içinden istediğiniz zaman düzenlenebilir; sonuç anında yeniden hesaplanır.</li>
+<li><strong>Silme:</strong> Uygulama içindeki "Tüm verileri sil" seçeneğiyle veya uygulamayı cihazınızdan kaldırarak verileriniz kalıcı olarak silinir. Bunun için bizden talepte bulunmanıza gerek yoktur, çünkü bizde bir kopyası yoktur.</li>
+<li><strong>İtiraz:</strong> Tarafımızca yürütülen bir veri işleme faaliyeti bulunmadığından itiraz edilecek bir işleme mevcut değildir.</li>
+</ul>
+<p>Yine de bu haklardan herhangi biriyle ilgili sorunuz olursa <code>[[EPOSTA]]</code> adresinden yazabilirsiniz; en geç <strong>30 gün</strong> içinde yanıtlarız. Türkiye'de ikamet ediyorsanız Kişisel Verileri Koruma Kurumu'na, AB'de ikamet ediyorsanız kendi ülkenizin veri koruma otoritesine şikâyette bulunma hakkınız her hâlükârda saklıdır.</p>
+<h2>1.13 Çocuklar</h2>
+<p>Zimem çocuklara yönelik bir uygulama değildir ve çocuklardan bilerek veri toplamaz — nitekim hiç kimseden veri toplamaz. Uygulama, dinî yükümlülüğü başlamış kişilerin geçmiş borcunu hesaplaması için tasarlanmıştır. 18 yaşından küçük kullanıcıların uygulama içi satın alma yapmadan önce veli veya vasilerinin onayını almaları gerekir.</p>
+<h2>1.14 Web sitesi</h2>
+<p>Bu politikanın ve diğer hukuki metinlerin barındırıldığı <code>zimem.app</code> sayfaları statik HTML'dir. Sitede çerez, analitik, izleme pikseli, gömülü yazı tipi servisi (Google Fonts vb.), gömülü video veya sosyal medya eklentisi kullanılmaz. Ancak sitenin barındırıldığı altyapı sağlayıcısı, tüm barındırma hizmetlerinde olduğu gibi, güvenlik amacıyla erişim kayıtları (IP adresi, tarayıcı bilgisi) tutabilir. Bu kayıtlara erişimimiz yoktur ve tarafımızca kullanılmaz.</p>
+<h2>1.15 Bu politikadaki değişiklikler</h2>
+<p>Bu politika değişirse, sayfanın başındaki sürüm numarası ve yürürlük tarihi güncellenir ve tüm sürüm geçmişi <code>zimem.app/degisiklikler</code> adresinde yayımlanır; eski sürümler silinmez. Veri toplama davranışını <strong>esaslı biçimde</strong> değiştiren bir güncelleme yapılırsa (örneğin herhangi bir analitik aracının eklenmesi), bu değişiklik uygulamayı bir sonraki açışınızda kapatılabilir bir bilgi ekranıyla ayrıca bildirilir; sessizce yürürlüğe konmaz.</p>
+<h2>1.16 İletişim</h2>
+<p><code>[[VERİ_SORUMLUSU]]</code> <code>[[ADRES]]</code> <code>[[EPOSTA]]</code> <code>[[KEP]]</code></p>
+</main>
+<footer>
+<p>Zimem hiçbir sunucuya bağlanmaz, hesap açtırmaz, konum istemez ve veri toplamaz.
+Bu sayfa statiktir: çerez, izleyici ve harici kaynak içermez.</p>
+</footer>
+</div>
+</body>
+</html>

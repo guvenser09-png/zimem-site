@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — Zimem</title>
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="index,follow">
+<style>
+:root{
+  --paper:#FBF8F3; --ink:#1F1D1A; --muted:#6B655C; --rule:#E4DDD1;
+  --accent:#2F6B5E; --card:#FFFFFF; --code:#F2EDE4;
+}
+:root:not([data-theme="light"]){@media (prefers-color-scheme:dark){
+  :root{--paper:#15140F; --ink:#EDE8DF; --muted:#A39C90; --rule:#2E2B24;
+        --accent:#8FC5B6; --card:#1D1B16; --code:#221F19;}
+}}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--paper:#15140F; --ink:#EDE8DF; --muted:#A39C90;
+    --rule:#2E2B24; --accent:#8FC5B6; --card:#1D1B16; --code:#221F19;}
+}
+:root[data-theme="dark"]{--paper:#15140F; --ink:#EDE8DF; --muted:#A39C90;
+  --rule:#2E2B24; --accent:#8FC5B6; --card:#1D1B16; --code:#221F19;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-text-size-adjust:100%}
+.wrap{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 5rem}
+header{border-bottom:1px solid var(--rule);padding-bottom:1.25rem;margin-bottom:2rem}
+.brand{font-weight:650;letter-spacing:-.01em;font-size:1.05rem;color:var(--ink);text-decoration:none}
+.brand span{color:var(--accent)}
+nav{margin-top:.6rem;font-size:.9rem}
+nav a{color:var(--muted);text-decoration:none;margin-right:1rem;white-space:nowrap}
+nav a:hover,nav a[aria-current]{color:var(--accent)}
+h1{font-size:1.85rem;line-height:1.25;letter-spacing:-.02em;margin:0 0 1rem}
+h2{font-size:1.25rem;margin:2.25rem 0 .6rem;letter-spacing:-.01em}
+h3{font-size:1.05rem;margin:1.75rem 0 .5rem}
+p,li{margin:.7rem 0}
+ul,ol{padding-left:1.35rem}
+a{color:var(--accent)}
+hr{border:0;border-top:1px solid var(--rule);margin:2.25rem 0}
+blockquote{margin:1.25rem 0;padding:.9rem 1.1rem;background:var(--card);
+  border-left:3px solid var(--accent);border-radius:0 8px 8px 0}
+blockquote p{margin:.3rem 0}
+code{background:var(--code);padding:.12em .38em;border-radius:5px;
+  font:.88em/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;word-break:break-word}
+.tablewrap{overflow-x:auto;margin:1.25rem 0}
+table{border-collapse:collapse;width:100%;font-size:.94rem}
+th,td{text-align:left;padding:.55rem .7rem;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-weight:620;color:var(--muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.03em}
+strong{font-weight:640}
+footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--rule);
+  color:var(--muted);font-size:.88rem}
+.lede{font-size:1.06rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="brand" href="index.html">Zimem<span>.</span></a>
+<nav><a href="gizlilik.html">Gizlilik</a><a href="kvkk.html">KVKK</a><a href="kullanim-sartlari.html">Kullanım Şartları</a><a href="privacy.html" aria-current="page">Privacy (EN)</a><a href="terms.html">Terms (EN)</a></nav>
+</header>
+<main>
+<p>(English)</p>
+<p><strong>Zimem Privacy Policy</strong> Version <code>[[SÜRÜM]]</code> — Effective <code>[[YÜRÜRLÜK]]</code></p>
+<h2>2.1 One-sentence summary</h2>
+<p>Zimem collects no personal data, sends nothing to any server, stores nothing about you, and shares nothing with anyone; everything you enter stays on your device.</p>
+<h2>2.2 Scope</h2>
+<p>This policy covers the <strong>Zimem</strong> iOS application, developed by <code>[[VERİ_SORUMLUSU]]</code>, and the informational pages hosted at <code>zimem.app</code>.</p>
+<h2>2.3 Why no data is collected: the architecture</h2>
+<p>Zimem has no backend. After installation the app never connects to the internet to perform its function. Consequently:</p>
+<ul>
+<li><strong>No account.</strong> No registration, sign-in, email, phone number, username or password. No social login.</li>
+<li><strong>No server.</strong> We operate no server that could receive, store or process your data. This is an architectural constraint of the product, not merely a policy choice.</li>
+<li><strong>No analytics.</strong> No Firebase, Google Analytics, Amplitude, Mixpanel, Sentry, Crashlytics or any other measurement or crash-reporting SDK is embedded in the app.</li>
+<li><strong>No advertising.</strong> No ad network, no advertising identifier (IDFA), no tracking pixel. The <code>AppTrackingTransparency</code> framework is not linked into the app at all, which is why you will never see a tracking permission prompt.</li>
+<li><strong>No third-party SDKs.</strong> The only external component is <code>Adhan</code>, an open-source (MIT-licensed) astronomical library that computes prayer times <strong>entirely on your device</strong>. It makes no network requests and communicates with no one.</li>
+<li><strong>No location permission.</strong> Zimem does <strong>not</strong> request location access. The app binary contains no location usage description (<code>NSLocationWhenInUseUsageDescription</code>), so iOS will never prompt you for it. You select your city manually from a list.</li>
+</ul>
+<h2>2.4 Information you enter into the app</h2>
+<p>To produce a result, Zimem asks you to declare: your date of birth or age range; your sex; your date of puberty if known; your school of jurisprudence (Hanafi or Shafi'i); the periods during which you did or did not perform obligatory worship; your typical menstrual duration and any childbirth and postpartum dates; periods of travel and of prolonged illness or unconsciousness; your selected city; and your daily make-up records.</p>
+<p><strong>All of this is stored exclusively in your device's protected application container.</strong> None of it is transmitted to us, to any server, to any analytics tool, or to any third party. We have no technical means of accessing it.</p>
+<h2>2.5 Explicit statement on special category data</h2>
+<p>Some of the above falls within <strong>special categories of personal data</strong> under Article 9 GDPR and Article 6 of Turkish Law No. 6698 (KVKK):</p>
+<ul>
+<li><strong>Religious belief and school of jurisprudence.</strong> Your use of Zimem itself indicates a religious practice, and your madhhab selection is data concerning religious belief.</li>
+<li><strong>Health data.</strong> Menstrual duration, childbirth dates, postpartum periods and periods of illness are health data.</li>
+</ul>
+<p>We are aware of how sensitive this is, and we designed the product from the outset never to collect it. No data in these categories is collected, processed, stored, disclosed to third parties, or transferred outside your device or country by us. Because this data never leaves your device, we do not act as a controller in respect of it.</p>
+<p>Additionally:</p>
+<ul>
+<li><strong>Zimem has no connection to Apple Health (HealthKit).</strong> It neither reads from nor writes to it and never requests such permission.</li>
+<li><strong>Zimem is not a cycle-tracking or health app.</strong> The menstrual duration you enter is a single number used for a retrospective arithmetic deduction. The app makes no future cycle predictions, no pregnancy or fertility estimates, and offers no medical interpretation of any kind.</li>
+</ul>
+<h2>2.6 On-device storage and iCloud</h2>
+<p><strong>Local storage.</strong> Your data is held on your device under iOS per-app sandboxing and device encryption (Data Protection). If you have device backups enabled, this data may be included in your own backup as part of normal iOS behaviour; that backup belongs to your Apple account and is inaccessible to us.</p>
+<p><strong>iCloud sync (a future release only).</strong> If cross-device sync is offered in the future, it will use the <strong>CloudKit private database</strong> exclusively — that is, the private area of <strong>your own iCloud account</strong>, operated by Apple, which we as the developer cannot read, delete or inspect. This policy will be updated and the change announced in-app before such a feature is enabled. <strong>In the currently published version there is no sync of any kind; your data never leaves your device.</strong></p>
+<h2>2.7 Notifications</h2>
+<p>The <strong>only</strong> permission Zimem requests is notification permission, and it is requested only after you have already seen your result and chosen to begin tracking.</p>
+<p>All notifications are scheduled <strong>locally on your device</strong>. No push infrastructure is used, so no device token exists and no notification signal ever reaches us. We cannot see when a notification was delivered, whether you opened it, or whether you acted on it.</p>
+<p>Only worship-time reminders are sent. No promotional, announcement, discount or re-engagement notifications are ever sent. You may disable notifications entirely in iOS Settings at any time; the app remains fully functional without them.</p>
+<h2>2.8 Purchases</h2>
+<p>Zimem offers a single one-time, non-subscription purchase, processed through Apple's in-app purchase system (StoreKit).</p>
+<ul>
+<li><strong>We never see your payment details.</strong> Card numbers, billing address, name and Apple Account details are never entered into the app and never reach us. Apple collects and processes the payment under its own privacy policy.</li>
+<li><strong>No third-party purchase intermediary.</strong> No RevenueCat, Adapty, Superwall or comparable service is used; the app talks to Apple's StoreKit directly.</li>
+<li>Apple provides us with <strong>aggregated, de-identified</strong> sales reports in App Store Connect (e.g. units sold per country per day). These do not allow us to identify you.</li>
+</ul>
+<h2>2.9 Crash and performance data</h2>
+<p>The app contains no crash-reporting SDK. If <strong>"Share iPhone Analytics"</strong> is enabled in your iOS settings, Apple may collect crash and performance data under its own terms and share some of it with us in aggregated form. This is an operating-system function of Apple's, not code we embedded, and you can disable it under Settings → Privacy &amp; Security → Analytics &amp; Improvements.</p>
+<h2>2.10 When you contact us</h2>
+<p>If you email <code>[[EPOSTA]]</code>, your email address and message naturally reach us. We use that correspondence solely to resolve your issue, never add you to a marketing list, and delete it after a reasonable period. You are not required to send screenshots; if you do, we recommend redacting personal details.</p>
+<h2>2.11 Statements deliberately absent from this policy</h2>
+<p>The following sentences are common in template privacy policies, are untrue for Zimem, and have therefore been deliberately omitted. We list them so you can audit whether they are ever quietly added later:</p>
+<ul>
+<li>"We may share your data with our business partners." — There is no data to share and no partners.</li>
+<li>"We collect usage data to improve our services." — No usage data is collected.</li>
+<li>"We may show you personalised advertising." — No advertising is shown.</li>
+<li>"Your data may be processed on our servers abroad." — We have no servers.</li>
+<li>"Your data may be transferred in the event of a merger." — There is no data to transfer.</li>
+<li>"We use cookies." — The app uses no cookies. (See 2.14 for the website.)</li>
+</ul>
+<p>If any of this ever changes, the change will be announced in-app and this section updated (see 2.15).</p>
+<h2>2.12 Your rights</h2>
+<p>Under GDPR Articles 15–22 and KVKK Article 11 you have rights of access, rectification, erasure, objection and portability. In Zimem these map as follows: your data is already only on your device and fully visible within the app; every declared assumption can be edited at any time with the result recalculated instantly; "Delete all data" in the app, or deleting the app, erases everything permanently — no request to us is needed because we hold no copy; and there is no processing by us to object to.</p>
+<p>You may still write to <code>[[EPOSTA]]</code> with any question, and we will respond within <strong>30 days</strong>. You retain the right to lodge a complaint with the Turkish Personal Data Protection Authority (KVKK) or, if you are in the EU/UK, with your local supervisory authority.</p>
+<h2>2.13 Children</h2>
+<p>Zimem is not directed at children and does not knowingly collect data from children — indeed it collects data from no one. It is designed for individuals calculating a past obligation. Users under 18 should obtain a parent's or guardian's consent before making an in-app purchase.</p>
+<h2>2.14 Website</h2>
+<p>The <code>zimem.app</code> pages hosting these documents are static HTML. No cookies, analytics, tracking pixels, hosted font services (e.g. Google Fonts), embedded video or social plugins are used. As with any hosting service, the infrastructure provider may keep access logs (IP address, browser string) for security purposes. We do not access or use those logs.</p>
+<h2>2.15 Changes</h2>
+<p>If this policy changes, the version and effective date at the top are updated and the full history is published at <code>zimem.app/changes</code>; earlier versions are never deleted. Any update that <strong>materially</strong> changes data-collection behaviour (for example adding any analytics tool) will additionally be announced in a dismissible in-app notice the next time you open the app. It will never take effect silently.</p>
+<h2>2.16 Contact</h2>
+<p><code>[[VERİ_SORUMLUSU]]</code> · <code>[[ADRES]]</code> · <code>[[EPOSTA]]</code></p>
+</main>
+<footer>
+<p>Zimem hiçbir sunucuya bağlanmaz, hesap açtırmaz, konum istemez ve veri toplamaz.
+Bu sayfa statiktir: çerez, izleyici ve harici kaynak içermez.</p>
+</footer>
+</div>
+</body>
+</html>
