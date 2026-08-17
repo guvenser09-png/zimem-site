@@ -62,11 +62,11 @@ footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--rule);
 </header>
 <main>
 <p>(English)</p>
-<p><strong>Zimem Privacy Policy</strong> Version <code>[[SÜRÜM]]</code> — Effective <code>[[YÜRÜRLÜK]]</code></p>
+<p><strong>Zimem Privacy Policy</strong> Version <code>1.0</code> — Effective <code>18 Ağustos 2026</code></p>
 <h2>2.1 One-sentence summary</h2>
 <p>Zimem collects no personal data, sends nothing to any server, stores nothing about you, and shares nothing with anyone; everything you enter stays on your device.</p>
 <h2>2.2 Scope</h2>
-<p>This policy covers the <strong>Zimem</strong> iOS application, developed by <code>[[VERİ_SORUMLUSU]]</code>, and the informational pages hosted at <code>zimem.app</code>.</p>
+<p>This policy covers the <strong>Zimem</strong> iOS application, developed by <code>Serdar Güven</code>, and the informational pages hosted at <code>guvenser09-png.github.io/zimem-site</code>.</p>
 <h2>2.3 Why no data is collected: the architecture</h2>
 <p>Zimem has no backend. After installation the app never connects to the internet to perform its function. Consequently:</p>
 <ul>
@@ -74,7 +74,7 @@ footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--rule);
 <li><strong>No server.</strong> We operate no server that could receive, store or process your data. This is an architectural constraint of the product, not merely a policy choice.</li>
 <li><strong>No analytics.</strong> No Firebase, Google Analytics, Amplitude, Mixpanel, Sentry, Crashlytics or any other measurement or crash-reporting SDK is embedded in the app.</li>
 <li><strong>No advertising.</strong> No ad network, no advertising identifier (IDFA), no tracking pixel. The <code>AppTrackingTransparency</code> framework is not linked into the app at all, which is why you will never see a tracking permission prompt.</li>
-<li><strong>No third-party SDKs.</strong> The only external component is <code>Adhan</code>, an open-source (MIT-licensed) astronomical library that computes prayer times <strong>entirely on your device</strong>. It makes no network requests and communicates with no one.</li>
+<li><strong>No third-party SDKs.</strong> The app contains no third-party libraries at all. Every calculation, prayer times included, runs in code we wrote ourselves, <strong>entirely on your device</strong>. This is not merely a policy: the absence of any remote package dependency is checked automatically on every build.</li>
 <li><strong>No location permission.</strong> Zimem does <strong>not</strong> request location access. The app binary contains no location usage description (<code>NSLocationWhenInUseUsageDescription</code>), so iOS will never prompt you for it. You select your city manually from a list.</li>
 </ul>
 <h2>2.4 Information you enter into the app</h2>
@@ -109,7 +109,7 @@ footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--rule);
 <h2>2.9 Crash and performance data</h2>
 <p>The app contains no crash-reporting SDK. If <strong>"Share iPhone Analytics"</strong> is enabled in your iOS settings, Apple may collect crash and performance data under its own terms and share some of it with us in aggregated form. This is an operating-system function of Apple's, not code we embedded, and you can disable it under Settings → Privacy &amp; Security → Analytics &amp; Improvements.</p>
 <h2>2.10 When you contact us</h2>
-<p>If you email <code>[[EPOSTA]]</code>, your email address and message naturally reach us. We use that correspondence solely to resolve your issue, never add you to a marketing list, and delete it after a reasonable period. You are not required to send screenshots; if you do, we recommend redacting personal details.</p>
+<p>If you email <code>guvenser09@gmail.com</code>, your email address and message naturally reach us. We use that correspondence solely to resolve your issue, never add you to a marketing list, and delete it after a reasonable period. You are not required to send screenshots; if you do, we recommend redacting personal details.</p>
 <h2>2.11 Statements deliberately absent from this policy</h2>
 <p>The following sentences are common in template privacy policies, are untrue for Zimem, and have therefore been deliberately omitted. We list them so you can audit whether they are ever quietly added later:</p>
 <ul>
@@ -123,15 +123,16 @@ footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--rule);
 <p>If any of this ever changes, the change will be announced in-app and this section updated (see 2.15).</p>
 <h2>2.12 Your rights</h2>
 <p>Under GDPR Articles 15–22 and KVKK Article 11 you have rights of access, rectification, erasure, objection and portability. In Zimem these map as follows: your data is already only on your device and fully visible within the app; every declared assumption can be edited at any time with the result recalculated instantly; "Delete all data" in the app, or deleting the app, erases everything permanently — no request to us is needed because we hold no copy; and there is no processing by us to object to.</p>
-<p>You may still write to <code>[[EPOSTA]]</code> with any question, and we will respond within <strong>30 days</strong>. You retain the right to lodge a complaint with the Turkish Personal Data Protection Authority (KVKK) or, if you are in the EU/UK, with your local supervisory authority.</p>
+<p>You may still write to <code>guvenser09@gmail.com</code> with any question, and we will respond within <strong>30 days</strong>. You retain the right to lodge a complaint with the Turkish Personal Data Protection Authority (KVKK) or, if you are in the EU/UK, with your local supervisory authority.</p>
 <h2>2.13 Children</h2>
 <p>Zimem is not directed at children and does not knowingly collect data from children — indeed it collects data from no one. It is designed for individuals calculating a past obligation. Users under 18 should obtain a parent's or guardian's consent before making an in-app purchase.</p>
 <h2>2.14 Website</h2>
-<p>The <code>zimem.app</code> pages hosting these documents are static HTML. No cookies, analytics, tracking pixels, hosted font services (e.g. Google Fonts), embedded video or social plugins are used. As with any hosting service, the infrastructure provider may keep access logs (IP address, browser string) for security purposes. We do not access or use those logs.</p>
+<p>The <code>guvenser09-png.github.io/zimem-site</code> pages hosting these documents are static HTML. No cookies, analytics, tracking pixels, hosted font services (e.g. Google Fonts), embedded video or social plugins are used. As with any hosting service, the infrastructure provider may keep access logs (IP address, browser string) for security purposes. We do not access or use those logs.</p>
 <h2>2.15 Changes</h2>
-<p>If this policy changes, the version and effective date at the top are updated and the full history is published at <code>zimem.app/changes</code>; earlier versions are never deleted. Any update that <strong>materially</strong> changes data-collection behaviour (for example adding any analytics tool) will additionally be announced in a dismissible in-app notice the next time you open the app. It will never take effect silently.</p>
+<p>If this policy changes, the version and effective date at the top are updated and earlier versions stay published on this site and are never deleted. Any update that <strong>materially</strong> changes data-collection behaviour (for example adding any analytics tool) will additionally be announced in a dismissible in-app notice the next time you open the app. It will never take effect silently.</p>
 <h2>2.16 Contact</h2>
-<p><code>[[VERİ_SORUMLUSU]]</code> · <code>[[ADRES]]</code> · <code>[[EPOSTA]]</code></p>
+<p><code>Serdar Güven</code> · <code>guvenser09@gmail.com</code></p>
+<p>A postal address for formal correspondence is provided on request to the address above.</p>
 </main>
 <footer>
 <p>Zimem hiçbir sunucuya bağlanmaz, hesap açtırmaz, konum istemez ve veri toplamaz.

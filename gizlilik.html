@@ -62,11 +62,11 @@ footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--rule);
 </header>
 <main>
 <p>(Türkçe)</p>
-<p><strong>Zimem Gizlilik Politikası</strong> Sürüm <code>[[SÜRÜM]]</code> — Yürürlük tarihi: <code>[[YÜRÜRLÜK]]</code></p>
+<p><strong>Zimem Gizlilik Politikası</strong> Sürüm <code>1.0</code> — Yürürlük tarihi: <code>18 Ağustos 2026</code></p>
 <h2>1.1 Tek cümlelik özet</h2>
 <p>Zimem hiçbir kişisel verinizi toplamaz, sunucusuna göndermez, saklamaz veya üçüncü kişilere aktarmaz; girdiğiniz her şey yalnızca kendi cihazınızda kalır.</p>
 <h2>1.2 Bu politikanın kapsamı</h2>
-<p>Bu politika, <code>[[VERİ_SORUMLUSU]]</code> tarafından geliştirilen <strong>Zimem</strong> adlı iOS uygulaması ve <code>zimem.app</code> alan adı altındaki bilgilendirme sayfaları için geçerlidir.</p>
+<p>Bu politika, <code>Serdar Güven</code> tarafından geliştirilen <strong>Zimem</strong> adlı iOS uygulaması ve <code>guvenser09-png.github.io/zimem-site</code> alan adı altındaki bilgilendirme sayfaları için geçerlidir.</p>
 <h2>1.3 Zimem'in mimarisi: neden veri toplanmıyor</h2>
 <p>Zimem'in bir arka uç sunucusu yoktur. Uygulama, kurulum sonrasında hesaplama yapmak için internete hiç bağlanmaz. Bunun sonucu olarak:</p>
 <ul>
@@ -74,7 +74,7 @@ footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--rule);
 <li><strong>Sunucu yok.</strong> Verilerinizi alacak, saklayacak veya işleyecek bir sunucumuz bulunmamaktadır. Bu bir gizlilik tercihi değil, ürünün mimari kısıtıdır.</li>
 <li><strong>Analitik yok.</strong> Firebase, Google Analytics, Amplitude, Mixpanel, Sentry, Crashlytics veya benzeri hiçbir ölçümleme/çökme raporlama aracı uygulamaya dahil edilmemiştir.</li>
 <li><strong>Reklam yok.</strong> Reklam ağı, reklam kimliği (IDFA), yeniden hedefleme pikseli veya izleme (tracking) teknolojisi kullanılmaz. <code>AppTrackingTransparency</code> çerçevesi uygulamaya hiç eklenmemiştir; bu nedenle size izleme izni soran bir ekran da hiçbir zaman görmezsiniz.</li>
-<li><strong>Üçüncü taraf SDK yok.</strong> Uygulamadaki tek harici bileşen, namaz vakitlerini <strong>cihazınızın içinde</strong> hesaplayan <code>Adhan</code> adlı açık kaynaklı (MIT lisanslı) matematik kütüphanesidir. Bu kütüphane ağ bağlantısı kurmaz, veri göndermez ve geliştiricisiyle hiçbir iletişimi yoktur.</li>
+<li><strong>Üçüncü taraf SDK yok.</strong> Uygulamada hiçbir üçüncü taraf kütüphanesi bulunmuyor. Namaz vakitleri dahil bütün hesaplar, tamamı bize ait olan ve <strong>cihazınızın içinde</strong> çalışan kodla yapılır. Bu, bir tercihten ibaret değildir: uzak paket bağımlılığı bulunmadığı her derlemede otomatik olarak denetlenir.</li>
 <li><strong>Konum izni yok.</strong> Zimem konum izni <strong>istemez</strong>. Uygulamanın kodunda konum servislerine erişim tanımı (<code>NSLocationWhenInUseUsageDescription</code>) bulunmaz; sistem size konum izni sormaz. Namaz vakti hesabı için şehri listeden kendiniz seçersiniz.</li>
 </ul>
 <h2>1.4 Uygulamaya girdiğiniz bilgiler</h2>
@@ -124,7 +124,7 @@ footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--rule);
 <h2>1.9 Çökme ve performans verileri</h2>
 <p>Uygulamada çökme raporlama aracı bulunmaz. iOS cihazınızda <strong>"iPhone Analizini Paylaş"</strong> ayarı açıksa, Apple çökme ve performans verilerini kendi kurallarına göre toplayabilir ve bunların bir kısmını bize toplulaştırılmış biçimde sunar. Bu, Apple'ın işletim sistemi düzeyindeki bir işlemidir, bizim uygulamamıza yerleştirilmiş bir kod değildir ve bu ayarı iOS Ayarlar → Gizlilik ve Güvenlik → Analiz ve İyileştirmeler bölümünden kapatabilirsiniz.</p>
 <h2>1.10 Bize kendi isteğinizle yazdığınızda</h2>
-<p>Bize <code>[[EPOSTA]]</code> adresinden e-posta gönderirseniz, e-posta adresiniz ve yazdığınız içerik doğal olarak bize ulaşır. Bu yazışmayı yalnızca sorununuzu çözmek için kullanırız, pazarlama listesine eklemeyiz ve makul bir süre sonra sileriz. Destek talebinizde ekran görüntüsü paylaşmak zorunda değilsiniz; paylaşırsanız kişisel bilgilerinizi karartmanızı öneririz.</p>
+<p>Bize <code>guvenser09@gmail.com</code> adresinden e-posta gönderirseniz, e-posta adresiniz ve yazdığınız içerik doğal olarak bize ulaşır. Bu yazışmayı yalnızca sorununuzu çözmek için kullanırız, pazarlama listesine eklemeyiz ve makul bir süre sonra sileriz. Destek talebinizde ekran görüntüsü paylaşmak zorunda değilsiniz; paylaşırsanız kişisel bilgilerinizi karartmanızı öneririz.</p>
 <h2>1.11 Bu politikada yer <strong>almayan</strong> ve bu üründe doğru <strong>olmayan</strong> ifadeler</h2>
 <p>Şablon gizlilik politikalarında sık geçen aşağıdaki cümleler Zimem için geçerli değildir ve bilerek yazılmamıştır. Bunları burada listeliyoruz ki ileride sessizce eklenip eklenmediğini denetleyebilesiniz:</p>
 <ul>
@@ -144,15 +144,16 @@ footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--rule);
 <li><strong>Silme:</strong> Uygulama içindeki "Tüm verileri sil" seçeneğiyle veya uygulamayı cihazınızdan kaldırarak verileriniz kalıcı olarak silinir. Bunun için bizden talepte bulunmanıza gerek yoktur, çünkü bizde bir kopyası yoktur.</li>
 <li><strong>İtiraz:</strong> Tarafımızca yürütülen bir veri işleme faaliyeti bulunmadığından itiraz edilecek bir işleme mevcut değildir.</li>
 </ul>
-<p>Yine de bu haklardan herhangi biriyle ilgili sorunuz olursa <code>[[EPOSTA]]</code> adresinden yazabilirsiniz; en geç <strong>30 gün</strong> içinde yanıtlarız. Türkiye'de ikamet ediyorsanız Kişisel Verileri Koruma Kurumu'na, AB'de ikamet ediyorsanız kendi ülkenizin veri koruma otoritesine şikâyette bulunma hakkınız her hâlükârda saklıdır.</p>
+<p>Yine de bu haklardan herhangi biriyle ilgili sorunuz olursa <code>guvenser09@gmail.com</code> adresinden yazabilirsiniz; en geç <strong>30 gün</strong> içinde yanıtlarız. Türkiye'de ikamet ediyorsanız Kişisel Verileri Koruma Kurumu'na, AB'de ikamet ediyorsanız kendi ülkenizin veri koruma otoritesine şikâyette bulunma hakkınız her hâlükârda saklıdır.</p>
 <h2>1.13 Çocuklar</h2>
 <p>Zimem çocuklara yönelik bir uygulama değildir ve çocuklardan bilerek veri toplamaz — nitekim hiç kimseden veri toplamaz. Uygulama, dinî yükümlülüğü başlamış kişilerin geçmiş borcunu hesaplaması için tasarlanmıştır. 18 yaşından küçük kullanıcıların uygulama içi satın alma yapmadan önce veli veya vasilerinin onayını almaları gerekir.</p>
 <h2>1.14 Web sitesi</h2>
-<p>Bu politikanın ve diğer hukuki metinlerin barındırıldığı <code>zimem.app</code> sayfaları statik HTML'dir. Sitede çerez, analitik, izleme pikseli, gömülü yazı tipi servisi (Google Fonts vb.), gömülü video veya sosyal medya eklentisi kullanılmaz. Ancak sitenin barındırıldığı altyapı sağlayıcısı, tüm barındırma hizmetlerinde olduğu gibi, güvenlik amacıyla erişim kayıtları (IP adresi, tarayıcı bilgisi) tutabilir. Bu kayıtlara erişimimiz yoktur ve tarafımızca kullanılmaz.</p>
+<p>Bu politikanın ve diğer hukuki metinlerin barındırıldığı <code>guvenser09-png.github.io/zimem-site</code> sayfaları statik HTML'dir. Sitede çerez, analitik, izleme pikseli, gömülü yazı tipi servisi (Google Fonts vb.), gömülü video veya sosyal medya eklentisi kullanılmaz. Ancak sitenin barındırıldığı altyapı sağlayıcısı, tüm barındırma hizmetlerinde olduğu gibi, güvenlik amacıyla erişim kayıtları (IP adresi, tarayıcı bilgisi) tutabilir. Bu kayıtlara erişimimiz yoktur ve tarafımızca kullanılmaz.</p>
 <h2>1.15 Bu politikadaki değişiklikler</h2>
-<p>Bu politika değişirse, sayfanın başındaki sürüm numarası ve yürürlük tarihi güncellenir ve tüm sürüm geçmişi <code>zimem.app/degisiklikler</code> adresinde yayımlanır; eski sürümler silinmez. Veri toplama davranışını <strong>esaslı biçimde</strong> değiştiren bir güncelleme yapılırsa (örneğin herhangi bir analitik aracının eklenmesi), bu değişiklik uygulamayı bir sonraki açışınızda kapatılabilir bir bilgi ekranıyla ayrıca bildirilir; sessizce yürürlüğe konmaz.</p>
+<p>Bu politika değişirse, sayfanın başındaki sürüm numarası ve yürürlük tarihi güncellenir ve önceki sürümler bu sitede yayımda tutulur ve silinmez. Veri toplama davranışını <strong>esaslı biçimde</strong> değiştiren bir güncelleme yapılırsa (örneğin herhangi bir analitik aracının eklenmesi), bu değişiklik uygulamayı bir sonraki açışınızda kapatılabilir bir bilgi ekranıyla ayrıca bildirilir; sessizce yürürlüğe konmaz.</p>
 <h2>1.16 İletişim</h2>
-<p><code>[[VERİ_SORUMLUSU]]</code> <code>[[ADRES]]</code> <code>[[EPOSTA]]</code> <code>[[KEP]]</code></p>
+<p><code>Serdar Güven</code> <code>guvenser09@gmail.com</code></p>
+<p>Tebligata elverişli açık adres, resmî yazışma gerektiren hâllerde yukarıdaki e-posta adresine yapılacak talep üzerine bildirilir.</p>
 </main>
 <footer>
 <p>Zimem hiçbir sunucuya bağlanmaz, hesap açtırmaz, konum istemez ve veri toplamaz.
